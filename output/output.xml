@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.7.5 on win32)" generated="20220325 13:56:42.997" rpa="true" schemaversion="2">
+<suite id="s1" name="Tasks" source="e:\Internshala\1-Xorion Technologies Pvt Ltd., Nagpur\Projects\Slack\tasks.robot">
+<test id="s1-t1" name="Slack Windows desktop application Automation robot">
+<kw name="Open Slack">
+<kw name="Open From Search" library="RPA.Desktop.Windows">
+<arg>Slack</arg>
+<arg>Slack</arg>
+<arg>wildcard=True</arg>
+<doc>Open application using Windows search dialog.
+Window title name is required to get handle on the application.</doc>
+<msg timestamp="20220325 13:56:43.769" level="INFO">Run from start menu: Slack</msg>
+<msg timestamp="20220325 13:56:47.203" level="INFO">Open dialog: 'Slack'</msg>
+<msg timestamp="20220325 13:56:47.610" level="INFO">Connect to application handle: 66276</msg>
+<status status="PASS" starttime="20220325 13:56:43.768" endtime="20220325 13:56:48.406"/>
+</kw>
+<status status="PASS" starttime="20220325 13:56:43.768" endtime="20220325 13:56:48.406"/>
+</kw>
+<kw name="Search for Channel">
+<kw name="Press Keys" library="RPA.Desktop">
+<arg>Ctrl</arg>
+<arg>1</arg>
+<doc>Press multiple keys down simultaneously.</doc>
+<msg timestamp="20220325 13:56:48.406" level="INFO">Pressing keys: Key.ctrl, '1'</msg>
+<status status="PASS" starttime="20220325 13:56:48.406" endtime="20220325 13:56:48.406"/>
+</kw>
+<status status="PASS" starttime="20220325 13:56:48.406" endtime="20220325 13:56:48.406"/>
+</kw>
+<kw name="Write to field">
+<arg>Jayush Chauhan</arg>
+<kw name="Press Keys" library="RPA.Desktop">
+<arg>Ctrl</arg>
+<arg>k</arg>
+<doc>Press multiple keys down simultaneously.</doc>
+<msg timestamp="20220325 13:56:48.406" level="INFO">Pressing keys: Key.ctrl, 'k'</msg>
+<status status="PASS" starttime="20220325 13:56:48.406" endtime="20220325 13:56:48.531"/>
+</kw>
+<kw name="Send Keys To Input" library="RPA.Desktop.Windows">
+<arg>Jayush Chauhan</arg>
+<doc>Send keys to windows and add ENTER if `with_enter` is True</doc>
+<status status="PASS" starttime="20220325 13:56:48.531" endtime="20220325 13:56:51.401"/>
+</kw>
+<status status="PASS" starttime="20220325 13:56:48.406" endtime="20220325 13:56:51.401"/>
+</kw>
+<kw name="Send Message">
+<kw name="Send Keys To Input" library="RPA.Desktop.Windows">
+<arg>${txt}</arg>
+<arg>with_enter=False</arg>
+<doc>Send keys to windows and add ENTER if `with_enter` is True</doc>
+<status status="PASS" starttime="20220325 13:56:51.401" endtime="20220325 13:56:52.718"/>
+</kw>
+<status status="PASS" starttime="20220325 13:56:51.401" endtime="20220325 13:56:52.719"/>
+</kw>
+<kw name="Schedule for Message">
+<kw name="Send Keys To Input" library="RPA.Desktop.Windows">
+<arg>{TAB}{TAB}{RIGHT}{ENTER}{DOWN}{ENTER}</arg>
+<arg>with_enter=True</arg>
+<doc>Send keys to windows and add ENTER if `with_enter` is True</doc>
+<status status="PASS" starttime="20220325 13:56:52.719" endtime="20220325 13:56:55.133"/>
+</kw>
+<status status="PASS" starttime="20220325 13:56:52.719" endtime="20220325 13:56:55.133"/>
+</kw>
+<status status="PASS" starttime="20220325 13:56:43.767" endtime="20220325 13:56:55.133"/>
+</test>
+<doc>Template robot main suite.
+Slack Windows desktop application Automation robot</doc>
+<status status="PASS" starttime="20220325 13:56:42.997" endtime="20220325 13:56:55.137"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
